@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Administrar Libros</title>
 </head>
 
@@ -20,8 +20,8 @@
     <header>
         <nav>
             <ul>
-                <li> <a class="navbar-brand" href="/index.html">
-                        <img src="/static/imagen/libro.webp" alt="Logo">
+                <li> <a class="navbar-brand" href="./index.html">
+                        <img src="../static/imagen/libro.webp" alt="Logo">
                         <p>Biblioteca Socrates</p>
                     </a>
                 </li>
@@ -33,7 +33,7 @@
 
         <section>
             <h3>Ingresar Libro</h3>
-            <form class="row g-3 formulario" id="validarFormulario">
+            <form class="row g-3 formulario" id="validarFormulario" >
                 <div class="col-md-3">
                     <label for="titulo" class="form-label">Título</label>
                     <input type="text" class="form-control" id="titulo">
@@ -64,7 +64,8 @@
                     <input type="texT" class="form-control" id="editorial">
                 </div>
                 <div class="col-6">
-                    <button type="submit" class="btn btn-primary" id="enviar">Registrar</button>
+                    <input type="hidden"  name="id" id="id-objeto">
+                    <button type="button" class="btn btn-primary" id="enviar">Registrar</button>
                 </div>
             </form>
         </section>
@@ -78,7 +79,8 @@
         <a href="#">Términos y condiciones</a>
         <a href="#">Preguntas Frecuentes</a>
     </footer>
-    <script src="../static/js/validarLibro.js"></script>
+    <script src="../static/js/validarLibro.js" type="módulo"></script>
+    <script src="../static/js/fetch.js"></script>
 </body>
 
 </html>

@@ -12,15 +12,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!--💡 Para la visualización en Live Server se modifico href-->
     <link rel="stylesheet" href="../static/style.css">
-    <title>Inicio sesion</title>
+    <title>Biblioteca</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li> <a class="navbar-brand" href="/templates/index.html">
+                <!--💡 Para la visualización en Live Server 
+                    se modifican:  href y src-->
+                <li> <a class="navbar-brand" href="./index.html">
                         <img src="../static/imagen/libro.webp" alt="Libro">
                         <p>Biblioteca Socrates</p>
                     </a>
@@ -31,29 +35,20 @@
 
     <main>
         <section>
-            <h3>Iniciar de sesión</h3>
-            <form class="formulario" id="validarUsuario">
-                <div class="col-md-6">
-                    <label for="email1" class="form-label">Email</label><br>
-                    <input type="email" id="email1" class="form-control" aria-describedby="emailHelp">
-                </div>
-                <div class="col-md-6">
-                    <label for="password1" class="form-label">Contraseña</label><br>
-                    <input type="password" id="password1" class="form-control"><br>
-                </div>
-                <div class="col-md-3">
-                    <button type="submit" class="btn btn-primary" id="sesion">Sign in</button>
-                </div>
-            </form>
+            <a class="btn btn-light col-6" href="./InicioSesion.html">Inciar sesión</a>
+            <a class="btn btn-light col-6" href="./Registro.html">Registrarse</a>
+            <a class="btn btn-light col-6" href="./Libro.html">Libros</a>
         </section>
-     
+        
     </main>
 
     <footer>
         <a href="#">Términos y condiciones</a>
         <a href="#">Preguntas Frecuentes</a>
     </footer>
-    <script src="../static/js/fetch.js"></script>
+
+    <!--Para activar Live Server, se debe comentar el script que conecta al back 🧐-->
+    <!-- <script src="../static/js/fetch.js"></script>-->
 </body>
 
 </html>

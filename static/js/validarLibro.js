@@ -1,3 +1,4 @@
+
 //-------------------- Ingreso de datos: libro
 const validarFormulario = (e) => {
     e.preventDefault();
@@ -53,3 +54,5 @@ const validarFormulario = (e) => {
     return true;
 };
 document.getElementById('enviar').addEventListener('click', validarFormulario);
+
+

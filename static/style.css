@@ -88,7 +88,6 @@ main a {
 
 #edicion{
     transform: rotate(0deg);
-
     margin:2px;
     width: 150px;
     text-align: center;
@@ -132,6 +131,14 @@ footer a {
 .formulario input {
     border: 1px solid rgba(9, 85, 146, 0.299);
 }
+/*modifica la vista en Edicion.html*/
+#edicion{
+    border: 1px solid rgba(9, 85, 146, 0.299);
+    height: auto;
+    width: auto;
+    margin-top: 2ex;
+    padding: auto;
+}
 
 /* Celular */
 @media screen and (max-width: 767px) {
@@ -166,6 +173,13 @@ footer a {
     .formulario {
         height: auto;
         width: 400px;
+    }
+
+    #edicion{
+        height: auto;
+        width: 330px;
+        margin-top:10px;
+        padding: 10px;
     }
 
     main {
